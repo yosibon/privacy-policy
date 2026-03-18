@@ -1,1 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>上級者向け設定 - My Emergency Watch</title>
 
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: auto; color: #333; }
+        h1 { color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 10px; }
+        h2 { color: #d32f2f; margin-top: 30px; }
+
+        nav { background: #f8f8f8; padding: 10px; border-radius: 8px; margin-bottom: 20px; }
+        nav a { text-decoration: none; color: #d32f2f; font-weight: bold; margin-right: 15px; }
+        nav a:hover { text-decoration: underline; }
+
+        .card { border: 1px solid #ddd; padding: 15px; border-radius: 8px; margin-bottom: 10px; transition: 0.3s; }
+        .card:hover { background-color: #fff5f5; border-color: #d32f2f; }
+
+        .footer { margin-top: 50px; font-size: 0.8em; color: #666; text-align: center; border-top: 1px solid #eee; padding-top: 20px; }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">トップ</a>
+        <a href="setup.html">初期設定</a>
+        <a href="kiosk.html">上級者向け設定</a>
+        <a href="privacy.html">プライバシーポリシー</a>
+    </nav>
+
+    <h1>上級者向け設定（キオスク化 / adb）</h1>
+
+    <p>このページでは、端末をキオスクモードに設定するための adb コマンドを紹介します。</p>
+
+    <h2>例：キオスク化コマンド</h2>
+    <pre>
+adb shell dpm set-device-owner com.example.app/.MyAdminReceiver
+    </pre>
+
+    <p>※ 実際のコマンドは後で正確なものに差し替えます。</p>
+
+    <div class="footer">
+        © 2026 My Emergency Watch
+    </div>
+
+</body>
+</html>
